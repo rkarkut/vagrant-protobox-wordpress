@@ -23,7 +23,7 @@ echo "==> Load BuddyPress plugin..."
 php wp-cli.phar plugin install buddypress --activate
 
 echo "==> Activate GetResponse plugin..."
-mv /vagrant/www/wp-getresponse-integration /vagrant/www/project/wp-content/plugins/wp-getresponse-integration
+mv /vagrant/web/wp-getresponse-integration /vagrant/web/project/wp-content/plugins/wp-getresponse-integration
 php wp-cli.phar plugin activate wp-getresponse-integration
 
 echo "==> Done..."
