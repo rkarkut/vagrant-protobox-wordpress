@@ -1,0 +1,1 @@
+Vagrant ProtoBox configuration files
