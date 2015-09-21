@@ -32,4 +32,4 @@ chmod 777 web/vagrant.sh
 vagrant ssh -- -t 'sh /vagrant/web/vagrant.sh'
 
 echo "==> Add domain gr-wordpress.app to hosts"
-echo "192.168.5.99    gr-wordpress.app" >> /etc/hosts
+sudo echo "192.168.5.99    gr-wordpress.app" >> /etc/hosts
