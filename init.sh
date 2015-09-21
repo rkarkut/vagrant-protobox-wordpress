@@ -6,10 +6,6 @@ if [ -d $directory ]; then
     rm -rf $directory
 fi
 
-echo "== Install protobox plugin"
-
-vagrant plugin install vagrant-protobox
-
 echo "==> Clone protobox..."
 git clone git@github.com:protobox/protobox.git $directory
 echo "==> Copy config file..."
@@ -17,6 +13,10 @@ echo "==> Copy config file..."
 cp common.yml $directory/data/config
 
 cd $directory
+
+
+echo "== Install protobox plugin"
+vagrant plugin install vagrant-protobox
 
 echo "==> Install box..."
 vagrant protobox install 'http://getprotobox.com/share/8dx0'
