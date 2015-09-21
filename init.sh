@@ -5,6 +5,11 @@ directory="project"
 if [ -d $directory ]; then
     rm -rf $directory
 fi
+
+echo "== Install protobox plugin"
+
+vagrant plugin install vagrant-protobox
+
 echo "==> Clone protobox..."
 git clone git@github.com:protobox/protobox.git $directory
 echo "==> Copy config file..."
