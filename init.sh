@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-directory="wp-vagrant"
+directory="project"
 
-if [ -d "wp-vagrant" ]; then
-    rm -rf "wp-vagrant"
+if [ -d $directory ]; then
+    rm -rf $directory
 fi
 echo "==> Clone protobox..."
-git clone git@github.com:protobox/protobox.git wp-vagrant
+git clone git@github.com:protobox/protobox.git $directory
 echo "==> Copy config file..."
 
 cp common.yml $directory/data/config
