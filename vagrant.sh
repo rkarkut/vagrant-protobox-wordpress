@@ -9,7 +9,7 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 
 echo "==> Downlaod core wordpress..."
 
-php wp-cli.phar core download --version=4.3.1
+php wp-cli.phar core download --version=4.2
 
 echo "==> Set config..."
 php wp-cli.phar core config --dbname=wordpress --dbuser=user --dbpass=user
